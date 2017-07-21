@@ -28,29 +28,59 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
         let difference = abs(targetValue - currentValue)
-        let points = 100 - difference
+        var points = 100 - difference
 
-        score += points
+        let title: String
+        // Differs from tutorial, uses switch block instead of if block
+        switch true {
+        case difference == 0:
+            title = "Perfect!"
+            points += 100
+        case difference < 5:
+            title = "You've almost had it!"
+            if difference == 1 {
+                points += 50
+            }
+        case difference < 10:
+            title = "Pretty good!"
+        default:
+            title = "Not even close…"
+        }
+
+        let message = "You scored \(points) points"
 
         let alert = UIAlertController(
-            title: "Hello World!",
-            message: "You scored \(points) points",
+            title: title,
+            message: message,
             preferredStyle: .alert
         )
         let action = UIAlertAction (
             title: "OK",
             style: .default,
-            handler: nil
+            handler: { action in
+                self.startNewRound()
+                self.updateLabels()
+            }
         )
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
 
-        startNewRound()
-        updateLabels()
+        score += points
     }
 
     @IBAction func sliderMoved(_ slider: UISlider) {
         currentValue = lroundf(slider.value)
+    }
+
+    @IBAction func startOver() {
+        startNewGame()
+        updateLabels()
+    }
+
+    func startNewGame() {
+        round = 0
+        score = 0
+        startNewRound()
     }
 
     func startNewRound() {

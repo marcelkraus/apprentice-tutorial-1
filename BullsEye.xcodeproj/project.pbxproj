@@ -303,6 +303,7 @@
 				DF261E441F21EF5B001CED49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
