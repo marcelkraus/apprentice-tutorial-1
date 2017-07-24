@@ -11,8 +11,9 @@
 		DF261E361F21EF5B001CED49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF261E351F21EF5B001CED49 /* ViewController.swift */; };
 		DF261E391F21EF5B001CED49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF261E371F21EF5B001CED49 /* Main.storyboard */; };
 		DF261E3B1F21EF5B001CED49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF261E3A1F21EF5B001CED49 /* Assets.xcassets */; };
-		DF261E3E1F21EF5B001CED49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF261E3C1F21EF5B001CED49 /* LaunchScreen.storyboard */; };
 		DF8D5C1E1F240F9C0017E460 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8D5C1D1F240F9C0017E460 /* AboutViewController.swift */; };
+		DFF5F43E1F24DAFB008316B0 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = DFF5F43D1F24DAFB008316B0 /* BullsEye.html */; };
+		DFF5F4421F24E244008316B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFF5F4411F24E244008316B0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +22,10 @@
 		DF261E351F21EF5B001CED49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF261E381F21EF5B001CED49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF261E3A1F21EF5B001CED49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF261E3D1F21EF5B001CED49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF261E3F1F21EF5B001CED49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF8D5C1D1F240F9C0017E460 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		DFF5F43D1F24DAFB008316B0 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		DFF5F4411F24E244008316B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		DF261E321F21EF5B001CED49 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				DF261E331F21EF5B001CED49 /* AppDelegate.swift */,
-				DF261E351F21EF5B001CED49 /* ViewController.swift */,
-				DF261E371F21EF5B001CED49 /* Main.storyboard */,
-				DF261E3A1F21EF5B001CED49 /* Assets.xcassets */,
-				DF261E3C1F21EF5B001CED49 /* LaunchScreen.storyboard */,
-				DF261E3F1F21EF5B001CED49 /* Info.plist */,
 				DF8D5C1D1F240F9C0017E460 /* AboutViewController.swift */,
+				DF261E331F21EF5B001CED49 /* AppDelegate.swift */,
+				DF261E3A1F21EF5B001CED49 /* Assets.xcassets */,
+				DFF5F43D1F24DAFB008316B0 /* BullsEye.html */,
+				DFF5F4411F24E244008316B0 /* Default-568h@2x.png */,
+				DF261E3F1F21EF5B001CED49 /* Info.plist */,
+				DF261E371F21EF5B001CED49 /* Main.storyboard */,
+				DF261E351F21EF5B001CED49 /* ViewController.swift */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -126,7 +129,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF261E3E1F21EF5B001CED49 /* LaunchScreen.storyboard in Resources */,
+				DFF5F43E1F24DAFB008316B0 /* BullsEye.html in Resources */,
+				DFF5F4421F24E244008316B0 /* Default-568h@2x.png in Resources */,
 				DF261E3B1F21EF5B001CED49 /* Assets.xcassets in Resources */,
 				DF261E391F21EF5B001CED49 /* Main.storyboard in Resources */,
 			);
@@ -154,14 +158,6 @@
 				DF261E381F21EF5B001CED49 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DF261E3C1F21EF5B001CED49 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF261E3D1F21EF5B001CED49 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
